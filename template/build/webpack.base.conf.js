@@ -2,7 +2,6 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
-const vuxLoader = require('vux-loader');
 const vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
@@ -137,17 +136,3 @@ module.exports = {
     child_process: 'empty'
   }
 }
-
-//vux
-module.exports = vuxLoader.merge(webpackConfig, {
-    plugins: [ {
-            name: 'vux-ui'
-        },
-        {
-            name: 'less-theme',
-            path: 'src/assets/css/vux/theme.less'
-        },
-        {
-            name: 'duplicate-style'
-        }]
-});
