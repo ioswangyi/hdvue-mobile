@@ -123,6 +123,9 @@
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1",
     "image-webpack-loader": "^4.4.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "vux-loader": "^1.2.9",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
